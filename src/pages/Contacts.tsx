@@ -21,7 +21,7 @@ const Contacts = () => {
     { 
       icon: Phone, 
       title: "Телефондар", 
-      details: ["+7 (xxx) xxx-xx-xx"],
+      details: ["8-725-33-4-06-48"],
       color: "text-green-500"
     },
     { 
@@ -46,7 +46,7 @@ const Contacts = () => {
     { 
       icon: Phone, 
       title: "Phones", 
-      details: ["+7 (xxx) xxx-xx-xx"],
+      details: ["8-725-33-4-06-48"],
       color: "text-green-500"
     },
     { 
@@ -71,7 +71,7 @@ const Contacts = () => {
     { 
       icon: Phone, 
       title: "Телефоны", 
-      details: ["+7 (xxx) xxx-xx-xx"],
+      details: ["8-725-33-4-06-48"],
       color: "text-green-500"
     },
     { 
@@ -175,9 +175,9 @@ const Contacts = () => {
         <div className="text-center z-10 space-y-4">
           <Globe className="h-16 w-16 text-blue-600 mx-auto animate-pulse" />
           <p className="text-gray-500 dark:text-gray-400 font-bold uppercase tracking-widest text-sm">{t.mapSoon}</p>
-          <button className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 px-6 py-2 rounded-full text-xs font-bold hover:bg-blue-600 hover:text-white transition-all">
+          <a href="https://yandex.kz/maps/?text=Туркестан+Мусабекова+27" target="_blank" rel="noopener noreferrer" className="inline-block bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 px-6 py-2 rounded-full text-xs font-bold hover:bg-blue-600 hover:text-white transition-all">
             {t.openMaps}
-          </button>
+          </a>
         </div>
       </section>
     </div>

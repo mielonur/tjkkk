@@ -20,15 +20,12 @@ const Footer = () => {
             <p className="text-gray-600 dark:text-gray-400 text-sm max-w-sm mb-6">
               {t.desc}
             </p>
-            <div className="flex gap-4">
-              <a href="#" className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-blue-100 dark:hover:bg-blue-900 transition-colors text-blue-600 dark:text-blue-400">
+            <div className="flex gap-4 relative z-50">
+              <a href="https://www.facebook.com/TUR.COLLEGE" target="_blank" rel="noopener noreferrer" className="relative z-50 inline-flex items-center justify-center p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-blue-100 dark:hover:bg-blue-900 transition-colors text-blue-600 dark:text-blue-400">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-pink-100 dark:hover:bg-pink-900 transition-colors text-pink-600 dark:text-pink-400">
+              <a href="https://www.instagram.com/tur_tjkqk?igsh=MXdtNmY4c3VzbXh3ag%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="relative z-50 inline-flex items-center justify-center p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-pink-100 dark:hover:bg-pink-900 transition-colors text-pink-600 dark:text-pink-400">
                 <Instagram className="h-5 w-5" />
-              </a>
-              <a href="#" className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-blue-100 dark:hover:bg-blue-900 transition-colors text-blue-400">
-                <Twitter className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -54,7 +51,7 @@ const Footer = () => {
               </li>
               <li className="flex gap-3">
                 <Phone className="h-5 w-5 text-blue-600 shrink-0" />
-                <span className="text-sm text-gray-600 dark:text-gray-400">+7 (xxx) xxx-xx-xx</span>
+                <span className="text-sm text-gray-600 dark:text-gray-400">8-725-33-4-06-48</span>
               </li>
               <li className="flex gap-3">
                 <Mail className="h-5 w-5 text-blue-600 shrink-0" />

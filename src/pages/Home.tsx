@@ -12,10 +12,10 @@ const Home = () => {
   const navT = translations[language].nav;
 
   const stats = [
-    { icon: Users, label: t.stats.students, value: '150 000+' },
-    { icon: GraduationCap, label: t.stats.teachers, value: '120+' },
-    { icon: BookOpen, label: t.stats.programs, value: '12' },
-    { icon: School, label: t.stats.graduates, value: '150 000+' },
+    { icon: Users, label: t.stats.students, value: '1867' },
+    { icon: GraduationCap, label: t.stats.teachers, value: '156' },
+    { icon: BookOpen, label: t.stats.programs, value: '11' },
+    { icon: School, label: t.stats.graduates, value: '50000+' },
   ];
 
   const whyUsList = language === 'kk' ? [
@@ -114,7 +114,7 @@ const Home = () => {
               </div>
               <div className="space-y-4 pt-12">
                 <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg border border-gray-100 dark:border-gray-700 text-left">
-                  <div className="text-blue-600 font-bold">95%</div>
+                  <div className="text-blue-600 font-bold">83%</div>
                   <div className="text-sm text-gray-600 dark:text-gray-400 text-xs uppercase font-bold tracking-wider">{t.graduatesWork}</div>
                 </div>
                 <img src={collageImg} alt="Library" className="rounded-2xl h-64 w-full object-cover shadow-lg" />

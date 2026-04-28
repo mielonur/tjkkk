@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import { 
   Terminal, ShieldCheck, PieChart, Briefcase, Settings, Landmark, 
   Search, Filter, Baby, Scissors, Code, Cpu, Navigation, Dumbbell, 
-  Palette, BookOpen, Languages, Clock, Hash
+  Palette, BookOpen, Languages, Clock, Hash, Sparkles, X
 } from 'lucide-react';
+import { programDetails } from '../data/programDetails';
 import { useAccessibility } from '../context/AccessibilityContext';
 import { translations } from '../i18n/translations';
 
@@ -12,6 +13,7 @@ const Programs = () => {
   const t = translations[language].programs;
   const navT = translations[language].nav;
   const [searchTerm, setSearchTerm] = useState('');
+  const [selectedProgram, setSelectedProgram] = useState<any>(null);
 
   // Mapping icons to program IDs
   const getIcon = (id: number) => {
@@ -25,6 +27,7 @@ const Programs = () => {
       case 7: return Dumbbell;
       case 8: return Palette;
       case 9: return Languages;
+      case 10: return Sparkles;
       default: return Terminal;
     }
   };
@@ -93,7 +96,10 @@ const Programs = () => {
                     <span className="font-medium">{t.duration}:</span>
                     <span className="text-gray-900 dark:text-gray-100">{t.yearsMonths}</span>
                   </div>
-                  <button className="w-full mt-4 bg-gray-50 dark:bg-gray-900/50 hover:bg-blue-600 hover:text-white text-gray-900 dark:text-white py-3 rounded-xl font-bold text-xs transition-all flex items-center justify-center gap-2 uppercase tracking-widest">
+                  <button 
+                    onClick={() => setSelectedProgram(program)}
+                    className="w-full mt-4 bg-gray-50 dark:bg-gray-900/50 hover:bg-blue-600 hover:text-white text-gray-900 dark:text-white py-3 rounded-xl font-bold text-xs transition-all flex items-center justify-center gap-2 uppercase tracking-widest"
+                  >
                     {translations[language].common.more} <ArrowRight className="h-3.5 w-3.5" />
                   </button>
                 </div>
@@ -116,6 +122,51 @@ const Programs = () => {
           </button>
         </div>
       </section>
+
+      {/* Modal */}
+      {selectedProgram && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
+          <div className="bg-white dark:bg-gray-900 rounded-3xl p-8 max-w-3xl w-full max-h-[90vh] overflow-y-auto relative shadow-2xl">
+            <button 
+              onClick={() => setSelectedProgram(null)}
+              className="absolute top-6 right-6 p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+            >
+              <X className="h-6 w-6 text-gray-500" />
+            </button>
+            
+            <h2 className="text-3xl font-bold mb-2 text-gray-900 dark:text-white pr-10">
+              {selectedProgram.name}
+            </h2>
+            <div className="flex items-center gap-2 text-blue-600 dark:text-blue-400 font-bold mb-6 tracking-widest text-sm">
+              <Hash className="h-4 w-4" /> {selectedProgram.code}
+            </div>
+
+            {programDetails[selectedProgram.code] ? (
+              <div className="space-y-6 text-gray-700 dark:text-gray-300">
+                <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-xl">
+                  <h4 className="font-bold text-gray-900 dark:text-white mb-2">
+                    {language === 'kk' ? 'Біліктілік:' : language === 'ru' ? 'Квалификация:' : 'Qualifications:'}
+                  </h4>
+                  <ul className="list-disc list-inside space-y-1 text-sm md:text-base">
+                    {programDetails[selectedProgram.code].qualifications.map((q, i) => (
+                      <li key={i}>{q}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="prose dark:prose-invert max-w-none text-sm md:text-base leading-relaxed">
+                  {programDetails[selectedProgram.code].content.split('\n').map((paragraph, idx) => (
+                    paragraph.trim() ? <p key={idx} className="mb-4">{paragraph.trim()}</p> : null
+                  ))}
+                </div>
+              </div>
+            ) : (
+              <div className="text-gray-500 text-center py-12">
+                {language === 'kk' ? 'Бұл мамандық бойынша ақпарат әзірге жоқ.' : language === 'ru' ? 'Информация по этой специальности пока отсутствует.' : 'Information for this program is currently unavailable.'}
+              </div>
+            )}
+          </div>
+        </div>
+      )}
     </div>
   );
 };

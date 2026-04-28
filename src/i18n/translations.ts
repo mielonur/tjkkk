@@ -10,7 +10,7 @@ export const translations = {
       login: "Вход"
     },
     home: {
-      heroTitle: "Туркестанский Высший многопрофильный ремесленный колледж",
+      heroTitle: "Туркестанский высший многопрофильный ремесленный колледж",
       heroSubtitle: "Качественное образование — залог успешного будущего",
       stats: {
         students: "Студентов",
@@ -57,7 +57,8 @@ export const translations = {
         { id: 6, code: "10150100", name: "Туризм" },
         { id: 7, code: "01140500", name: "Физическая культура и спорт" },
         { id: 8, code: "02140100", name: "Декоративно-прикладное искусство и народные промыслы (по профилю)" },
-        { id: 9, code: "01140600", name: "Педагогика и методика преподавания языка и литературы в основном среднем образовании" }
+        { id: 9, code: "01140600", name: "Педагогика и методика преподавания языка и литературы в основном среднем образовании" },
+        { id: 10, code: "02140200", name: "Ювелирное дело" }
       ]
     },
     contacts: {
@@ -116,7 +117,7 @@ export const translations = {
       login: "Кіру"
     },
     home: {
-      heroTitle: "Түркістан Жоғары көпсалалы қолөнер колледжі",
+      heroTitle: "Түркістан жоғары көпсалалы қолөнер колледжі",
       heroSubtitle: "Сапалы білім — сәтті болашақтың кепілі",
       stats: {
         students: "Студенттер",
@@ -163,7 +164,8 @@ export const translations = {
         { id: 6, code: "10150100", name: "Туризм" },
         { id: 7, code: "01140500", name: "Дене тәрбиесі және спорт" },
         { id: 8, code: "02140100", name: "Сәндік қолданбалы және халықтық кәсіпшілік өнері (бейіні бойынша)" },
-        { id: 9, code: "01140600", name: "Негізгі орта білім берудегі тіл мен әдебиетті оқытудың педагогикасы мен әдістемесі" }
+        { id: 9, code: "01140600", name: "Негізгі орта білім берудегі тіл мен әдебиетті оқытудың педагогикасы мен әдістемесі" },
+        { id: 10, code: "02140200", name: "Зергерлік іс" }
       ]
     },
     contacts: {
@@ -270,7 +272,8 @@ export const translations = {
         { id: 6, code: "10150100", name: "Tourism" },
         { id: 7, code: "01140500", name: "Physical Education and Sports" },
         { id: 8, code: "02140100", name: "Decorative Applied Arts and Folk Crafts" },
-        { id: 9, code: "01140600", name: "Pedagogy and Methodology of Language and Literature" }
+        { id: 9, code: "01140600", name: "Pedagogy and Methodology of Language and Literature" },
+        { id: 10, code: "02140200", name: "Jewelry Making" }
       ]
     },
     contacts: {
