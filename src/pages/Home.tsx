@@ -123,6 +123,31 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Gallery Section */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+            {language === 'kk' ? 'Галерея' : language === 'en' ? 'Gallery' : 'Галерея'}
+          </h2>
+          <p className="text-gray-600 dark:text-gray-400">
+            {language === 'kk' ? 'Колледж өмірінен көріністер' : language === 'en' ? 'Moments from college life' : 'Моменты из жизни колледжа'}
+          </p>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          {Array.from({ length: 16 }).map((_, idx) => (
+            <div key={idx} className="relative group overflow-hidden rounded-2xl aspect-square shadow-sm hover:shadow-xl transition-all">
+              <img 
+                src={`/tjkkk/albom/photo_${idx + 1}.jpeg`} 
+                alt={`Gallery photo ${idx + 1}`} 
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500" />
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 };

@@ -58,7 +58,8 @@ export const translations = {
         { id: 7, code: "01140500", name: "Физическая культура и спорт" },
         { id: 8, code: "02140100", name: "Декоративно-прикладное искусство и народные промыслы (по профилю)" },
         { id: 9, code: "01140600", name: "Педагогика и методика преподавания языка и литературы в основном среднем образовании" },
-        { id: 10, code: "02140200", name: "Ювелирное дело" }
+        { id: 10, code: "02140200", name: "Ювелирное дело" },
+        { id: 11, code: "07130700", name: "Техническое обслуживание, ремонт и эксплуатация электромеханического оборудования (по видам)" }
       ]
     },
     contacts: {
@@ -165,7 +166,8 @@ export const translations = {
         { id: 7, code: "01140500", name: "Дене тәрбиесі және спорт" },
         { id: 8, code: "02140100", name: "Сәндік қолданбалы және халықтық кәсіпшілік өнері (бейіні бойынша)" },
         { id: 9, code: "01140600", name: "Негізгі орта білім берудегі тіл мен әдебиетті оқытудың педагогикасы мен әдістемесі" },
-        { id: 10, code: "02140200", name: "Зергерлік іс" }
+        { id: 10, code: "02140200", name: "Зергерлік іс" },
+        { id: 11, code: "07130700", name: "Электромеханикалық жабдықтарға техникалық қызмет көрсету, жөндеу және пайдалану (түрлері және салалары бойынша)" }
       ]
     },
     contacts: {
@@ -273,7 +275,8 @@ export const translations = {
         { id: 7, code: "01140500", name: "Physical Education and Sports" },
         { id: 8, code: "02140100", name: "Decorative Applied Arts and Folk Crafts" },
         { id: 9, code: "01140600", name: "Pedagogy and Methodology of Language and Literature" },
-        { id: 10, code: "02140200", name: "Jewelry Making" }
+        { id: 10, code: "02140200", name: "Jewelry Making" },
+        { id: 11, code: "07130700", name: "Maintenance, repair and operation of electromechanical equipment" }
       ]
     },
     contacts: {

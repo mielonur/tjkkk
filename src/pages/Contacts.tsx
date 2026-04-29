@@ -169,16 +169,16 @@ const Contacts = () => {
         </div>
       </div>
 
-      {/* Map Placeholder */}
-      <section className="rounded-[3rem] overflow-hidden h-96 bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-inner flex items-center justify-center relative group">
-        <div className="absolute inset-0 bg-blue-900/10 dark:bg-blue-900/20 group-hover:bg-transparent transition-colors duration-500" />
-        <div className="text-center z-10 space-y-4">
-          <Globe className="h-16 w-16 text-blue-600 mx-auto animate-pulse" />
-          <p className="text-gray-500 dark:text-gray-400 font-bold uppercase tracking-widest text-sm">{t.mapSoon}</p>
-          <a href="https://yandex.kz/maps/?text=Туркестан+Мусабекова+27" target="_blank" rel="noopener noreferrer" className="inline-block bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 px-6 py-2 rounded-full text-xs font-bold hover:bg-blue-600 hover:text-white transition-all">
-            {t.openMaps}
-          </a>
-        </div>
+      {/* Map */}
+      <section className="rounded-[3rem] overflow-hidden h-96 border border-gray-200 dark:border-gray-700 shadow-inner relative">
+        <iframe 
+          src="https://yandex.ru/map-widget/v1/?mode=search&text=Туркестан%2C%20Мусабекова%2027" 
+          width="100%" 
+          height="100%" 
+          frameBorder="0" 
+          allowFullScreen={true}
+          style={{ position: 'relative' }}
+        ></iframe>
       </section>
     </div>
   );
