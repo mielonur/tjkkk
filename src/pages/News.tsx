@@ -224,10 +224,29 @@ const News = () => {
       </div>
 
       {/* Pagination Placeholder */}
-      <div className="flex justify-center pt-8">
+      <div className="flex justify-center pt-8 border-b border-gray-100 dark:border-gray-800 pb-12">
         <button className="px-10 py-4 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-2xl font-bold text-xs uppercase tracking-widest hover:bg-blue-600 hover:text-white transition-all shadow-sm">
           {language === 'kk' ? 'Көбірек жаңалық жүктеу' : language === 'en' ? 'Load more news' : 'Загрузить больше новостей'}
         </button>
+      </div>
+
+      {/* Facebook News Section */}
+      <div className="pt-8">
+        <div className="flex items-center gap-2 text-blue-600 font-bold text-sm uppercase tracking-widest mb-8">
+          <Share2 className="h-4 w-4" /> 
+          {language === 'kk' ? 'Әлеуметтік желілерде' : language === 'en' ? 'On Social Media' : 'В социальных сетях'}
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 justify-items-center">
+          <div className="w-full flex justify-center overflow-hidden bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 p-4">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FTUR.COLLEGE%2Fposts%2Fpfbid0DTy5QT7LdfDR7cUiFK2stReUG22ouc5KoVwPWTYnzM9xRfAo7WPR12cRBhhZ9rEFl&show_text=true&width=500" width="500" height="805" style={{border:"none", overflow:"hidden", maxWidth: "100%"}} scrolling="no" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          </div>
+          <div className="w-full flex justify-center overflow-hidden bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 p-4">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FTUR.COLLEGE%2Fposts%2Fpfbid02f8Pfcd8fnmtdBnUMVB5dJ9P52tb7hEzWoBHiAKpDqRZAJsYccTU4kYRj8AZiW8s8l&show_text=true&width=500" width="500" height="736" style={{border:"none", overflow:"hidden", maxWidth: "100%"}} scrolling="no" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          </div>
+          <div className="w-full flex justify-center overflow-hidden bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 p-4">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FTUR.COLLEGE%2Fposts%2Fpfbid029VCt4zTPZDLkejCJgMvijwJcu7upupvgLkJUqL674FpMuDXju8in3iQciTwBZHhMl&show_text=true&width=500" width="500" height="250" style={{border:"none", overflow:"hidden", maxWidth: "100%"}} scrolling="no" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          </div>
+        </div>
       </div>
     </div>
   );
