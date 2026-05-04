@@ -18,6 +18,33 @@ const News = () => {
 
   const news = language === 'kk' ? [
     {
+      id: 6,
+      title: "«Қауіпсіз балалық шақ» концепциясы аясындағы тікелей эфир",
+      date: "29 сәуір 2026",
+      category: "Оқиғалар",
+      img: news1_img,
+      excerpt: "Колледж студенттері «Қауіпсіз балалық шақ» концепциясы аясында өткен тікелей эфирді тамашалады. Прокурор орынбасары өзекті мәселелерге тоқталды.",
+      link: "https://www.facebook.com/TUR.COLLEGE/posts/pfbid0DTy5QT7LdfDR7cUiFK2stReUG22ouc5KoVwPWTYnzM9xRfAo7WPR12cRBhhZ9rEFl"
+    },
+    {
+      id: 7,
+      title: "«Қыз тәрбиесі — ұлт тәрбиесі»: Ұрпақтар сабақтастығы",
+      date: "28 сәуір 2026",
+      category: "Оқиғалар",
+      img: referendumImg,
+      excerpt: "Түркістан жоғары көпсалалы қолөнер колледжінде өте маңызды әрі тағылымы зор кездесу кеші өтті. Шара барысында ардақты зейнеткер апалары студент қыздарға өмірлік тәжірибелерімен бөлісті.",
+      link: "https://www.facebook.com/TUR.COLLEGE/posts/pfbid02f8Pfcd8fnmtdBnUMVB5dJ9P52tb7hEzWoBHiAKpDqRZAJsYccTU4kYRj8AZiW8s8l"
+    },
+    {
+      id: 8,
+      title: "“LEADERSHIP – Жаңа заманның шынайы күші”",
+      date: "20 сәуір 2026",
+      category: "Оқиғалар",
+      img: news1Img,
+      excerpt: "Колледжімізде мазмұнды әрі қызықты іс-шара өтті. Студенттер көшбасшылық қасиеттердің маңызын түсініп, өз ойларын ортаға салды.",
+      link: "https://www.facebook.com/TUR.COLLEGE/posts/pfbid029VCt4zTPZDLkejCJgMvijwJcu7upupvgLkJUqL674FpMuDXju8in3iQciTwBZHhMl"
+    },
+    {
       id: 4,
       title: "Студенттерге арналған маңызды ақпараттық кездесу",
       date: "08 сәуір 2026",
@@ -59,6 +86,33 @@ const News = () => {
     }
   ] : language === 'en' ? [
     {
+      id: 6,
+      title: "Live Broadcast on the 'Safe Childhood' Concept",
+      date: "April 29, 2026",
+      category: "Events",
+      img: news1_img,
+      excerpt: "College students watched a live broadcast on the 'Safe Childhood' concept. The Deputy Prosecutor addressed pressing issues.",
+      link: "https://www.facebook.com/TUR.COLLEGE/posts/pfbid0DTy5QT7LdfDR7cUiFK2stReUG22ouc5KoVwPWTYnzM9xRfAo7WPR12cRBhhZ9rEFl"
+    },
+    {
+      id: 7,
+      title: "'Upbringing of a Girl - Upbringing of a Nation': Generational Continuity",
+      date: "April 28, 2026",
+      category: "Events",
+      img: referendumImg,
+      excerpt: "An important and educational meeting was held at the Turkestan Higher Multidisciplinary College of Crafts. Respected pensioners shared their life experiences with the female students.",
+      link: "https://www.facebook.com/TUR.COLLEGE/posts/pfbid02f8Pfcd8fnmtdBnUMVB5dJ9P52tb7hEzWoBHiAKpDqRZAJsYccTU4kYRj8AZiW8s8l"
+    },
+    {
+      id: 8,
+      title: "'LEADERSHIP - The True Power of the New Era'",
+      date: "April 20, 2026",
+      category: "Events",
+      img: news1Img,
+      excerpt: "A meaningful and interesting event was held in our college. Students understood the importance of leadership qualities and shared their thoughts.",
+      link: "https://www.facebook.com/TUR.COLLEGE/posts/pfbid029VCt4zTPZDLkejCJgMvijwJcu7upupvgLkJUqL674FpMuDXju8in3iQciTwBZHhMl"
+    },
+    {
       id: 4,
       title: "Important Information Meeting for Students",
       date: "April 08, 2026",
@@ -99,6 +153,33 @@ const News = () => {
       excerpt: "Students and employees of the college took an active part in the voting, showing their civic position."
     }
   ] : [
+    {
+      id: 6,
+      title: "Прямой эфир в рамках концепции «Безопасное детство»",
+      date: "29 апреля 2026",
+      category: "События",
+      img: news1_img,
+      excerpt: "Студенты колледжа посмотрели прямой эфир в рамках концепции «Безопасное детство». Заместитель прокурора затронул актуальные вопросы.",
+      link: "https://www.facebook.com/TUR.COLLEGE/posts/pfbid0DTy5QT7LdfDR7cUiFK2stReUG22ouc5KoVwPWTYnzM9xRfAo7WPR12cRBhhZ9rEFl"
+    },
+    {
+      id: 7,
+      title: "«Воспитание девочки — воспитание нации»: Преемственность поколений",
+      date: "28 апреля 2026",
+      category: "События",
+      img: referendumImg,
+      excerpt: "В Туркестанском высшем многопрофильном колледже ремесел прошла важная встреча. Уважаемые пенсионеры поделились своим жизненным опытом со студентками.",
+      link: "https://www.facebook.com/TUR.COLLEGE/posts/pfbid02f8Pfcd8fnmtdBnUMVB5dJ9P52tb7hEzWoBHiAKpDqRZAJsYccTU4kYRj8AZiW8s8l"
+    },
+    {
+      id: 8,
+      title: "«LEADERSHIP – Истинная сила новой эпохи»",
+      date: "20 апреля 2026",
+      category: "События",
+      img: news1Img,
+      excerpt: "В нашем колледже прошло содержательное мероприятие. Студенты осознали важность лидерских качеств и поделились своими мыслями.",
+      link: "https://www.facebook.com/TUR.COLLEGE/posts/pfbid029VCt4zTPZDLkejCJgMvijwJcu7upupvgLkJUqL674FpMuDXju8in3iQciTwBZHhMl"
+    },
     {
       id: 4,
       title: "Важная информационная встреча для студентов",
@@ -206,7 +287,7 @@ const News = () => {
               </p>
               <div className="pt-6 mt-auto flex justify-between items-center border-t border-gray-50 dark:border-gray-700/50">
                 <a 
-                  href="https://www.facebook.com/TUR.COLLEGE" 
+                  href={item.link || "https://www.facebook.com/TUR.COLLEGE"} 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-blue-600 dark:text-blue-400 font-bold text-xs uppercase tracking-widest flex items-center gap-2 group/btn"
@@ -224,29 +305,10 @@ const News = () => {
       </div>
 
       {/* Pagination Placeholder */}
-      <div className="flex justify-center pt-8 border-b border-gray-100 dark:border-gray-800 pb-12">
+      <div className="flex justify-center pt-8">
         <button className="px-10 py-4 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-2xl font-bold text-xs uppercase tracking-widest hover:bg-blue-600 hover:text-white transition-all shadow-sm">
           {language === 'kk' ? 'Көбірек жаңалық жүктеу' : language === 'en' ? 'Load more news' : 'Загрузить больше новостей'}
         </button>
-      </div>
-
-      {/* Facebook News Section */}
-      <div className="pt-8">
-        <div className="flex items-center gap-2 text-blue-600 font-bold text-sm uppercase tracking-widest mb-8">
-          <Share2 className="h-4 w-4" /> 
-          {language === 'kk' ? 'Әлеуметтік желілерде' : language === 'en' ? 'On Social Media' : 'В социальных сетях'}
-        </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 justify-items-center">
-          <div className="w-full flex justify-center overflow-hidden bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 p-4">
-            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FTUR.COLLEGE%2Fposts%2Fpfbid0DTy5QT7LdfDR7cUiFK2stReUG22ouc5KoVwPWTYnzM9xRfAo7WPR12cRBhhZ9rEFl&show_text=true&width=500" width="500" height="805" style={{border:"none", overflow:"hidden", maxWidth: "100%"}} scrolling="no" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-          </div>
-          <div className="w-full flex justify-center overflow-hidden bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 p-4">
-            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FTUR.COLLEGE%2Fposts%2Fpfbid02f8Pfcd8fnmtdBnUMVB5dJ9P52tb7hEzWoBHiAKpDqRZAJsYccTU4kYRj8AZiW8s8l&show_text=true&width=500" width="500" height="736" style={{border:"none", overflow:"hidden", maxWidth: "100%"}} scrolling="no" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-          </div>
-          <div className="w-full flex justify-center overflow-hidden bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 p-4">
-            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FTUR.COLLEGE%2Fposts%2Fpfbid029VCt4zTPZDLkejCJgMvijwJcu7upupvgLkJUqL674FpMuDXju8in3iQciTwBZHhMl&show_text=true&width=500" width="500" height="250" style={{border:"none", overflow:"hidden", maxWidth: "100%"}} scrolling="no" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-          </div>
-        </div>
       </div>
     </div>
   );
